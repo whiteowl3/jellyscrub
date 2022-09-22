@@ -115,11 +115,6 @@ public class BIFMetadataProvider : ICustomMetadataProvider<Episode>,
             return false;
         }
 
-        if (item.IsShortcut)
-        {
-            return false;
-        }
-
         if (!item.IsCompleteMedia)
         {
             return false;
@@ -136,10 +131,6 @@ public class BIFMetadataProvider : ICustomMetadataProvider<Episode>,
             {
                 return false;
             }
-        }
-        else
-        {
-            return false;
         }
 
         return true;
